@@ -66,7 +66,7 @@ a:hover {
 .banner {
     display: flex;
     width: 100%;
-    height: fit-content;
+    height: auto;
     margin: 0;
     background-color: hsl(0, 0%, 86%);
 }
@@ -81,12 +81,35 @@ a:hover {
     color: hsl(0, 0%, 30%);
     margin: auto;
     padding-right: 72px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    justify-content: stretch;
 }
 
 .banner-text h1 {
     font-size: 3rem;
+    margin-left: 0;
 }
 
 .banner-text p {
     font-size: 1.6rem;
+    margin-left: 0;
+}
+
+.banner-text button {
+    background-color: hsl(0, 0%, 30%);
+    width: 75%;
+    height: 3rem;
+}
+
+.banner button a {
+    color: #FFFFFF;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-size: 1.2rem;
+}
+
+.banner-text button:hover {
+    background-color: hsl(200, 60%, 35%);
+    cursor: pointer;
 }
